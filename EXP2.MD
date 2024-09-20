@@ -69,7 +69,7 @@ else:
 
 
 ### Output:
-![Screenshot 2024-09-13 141313] (https://github.com/user-attachments/assets/de4d065c-26b8-464d-bd37-a5d420e56071)
+https://github.com/user-attachments/assets/de4d065c-26b8-464d-bd37-a5d420e56071
 
 
 
