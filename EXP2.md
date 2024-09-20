@@ -69,9 +69,11 @@ else:
 
 
 ### Output:
-https://github.com/user-attachments/assets/de4d065c-26b8-464d-bd37-a5d420e56071
 
 
+![Screenshot 2024-09-13 141313](https://github.com/user-attachments/assets/6d443a84-5b84-4ea4-8667-f69535fe3623)
+
+![Screenshot 2024-09-13 141329](https://github.com/user-attachments/assets/e9021ae6-6b3c-4961-b340-adb43f2849cb)
 
 
 
