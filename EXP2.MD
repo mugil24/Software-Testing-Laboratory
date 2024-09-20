@@ -16,6 +16,8 @@ Algorithm:
 5. Perform matrix multiplication and store the answer in result.
 6. Stop the program.
 ### Program:
+```
+
 r1, c1 = input("Enter row and column count in matrix 1: ").split()
 r2, c2 = input("Enter row and column count in matrix 2: ").split()
 matrix1 = []
@@ -60,7 +62,7 @@ if r1.isnumeric() and c1.isnumeric() and r2.isnumeric() and c2.isnumeric():
 else:
     print("Enter valid numeric values for rows and columns.")
 
-
+```
 
 
 
