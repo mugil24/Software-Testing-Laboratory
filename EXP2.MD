@@ -66,16 +66,8 @@ else:
 
 
 
-
-
-
-
-
-
 ### Output:
-
 C:\Users\vaanm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-13 141313.png
-C:\Users\vaanm\OneDrive\Pictures\Screenshots\Screenshot 2024-09-13 141329.png
 
 
 
