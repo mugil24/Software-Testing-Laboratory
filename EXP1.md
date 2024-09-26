@@ -15,7 +15,7 @@ Cases
 5. Stop the program.
 ### Program:
 
-````
+```
 ##do…while
 def display():
     start = input("Enter a positive value for START: ")
@@ -92,7 +92,6 @@ def iterate():
         print(ord(i), end=" ")
 
 iterate()
-!
 ```
 
 
