@@ -57,10 +57,11 @@ except ValueError:
 
 
 ### Output:
-![Screenshot 2024-09-20 104302](https://github.com/user-attachments/assets/faafa67f-dc29-427f-bbe5-9a054ceec091)
 
 
-![Screenshot 2024-09-26 212457](https://github.com/user-attachments/assets/a99d6ccf-46ce-4b51-8042-f0fd366dd0d5)
+
+![Screenshot 2024-09-26 212457](https://github.com/user-attachments/assets/227b7e40-5362-426b-9099-96f3c457cc15)
+
 
 
 
