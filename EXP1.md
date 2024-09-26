@@ -33,8 +33,7 @@ def display():
         print("Enter a valid positive number.")
 
 display()
-```
-```
+
  ##while
 start=input("Enter a positive value for START: ")
 end=input("Entera positive value for END: ")
@@ -47,8 +46,7 @@ if start.isnumeric() and end.isnumeric():
         start+=1
 else:
     print("Enter a valid positive number.")
-```
-```
+
 ###switch\
 def switch():
     switcher = {
@@ -64,8 +62,7 @@ def switch():
         print("Enter a valid number.")
 
 switch()
-```
-```
+
 ##ifelse
 def compare():
     a = input("Enter a value for A: ")
@@ -87,8 +84,7 @@ def compare():
 
 
 compare()
-```
-```
+
 ##for
 def iterate():
     string = input("Enter a string: ")
