@@ -50,7 +50,7 @@ else:
 ```
 ```
 
-###switch\
+###switch
 def switch():
     switcher = {
         0: "even",
