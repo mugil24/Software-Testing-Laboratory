@@ -122,8 +122,6 @@ iterate()
 ![Screenshot 2024-08-23 105421](https://github.com/user-attachments/assets/ded320c9-830f-46fd-a8a1-20735f971320)
 ![Screenshot 2024-08-23 112030](https://github.com/user-attachments/assets/b4a23cd6-d69a-4858-b3e2-c30a5a6d5555)
 ![Screenshot 2024-08-23 112048](https://github.com/user-attachments/assets/1901e89b-5ef2-439f-92e1-2de79ea90e5e)
-
-![Screenshot 2024-09-20 103151](https://github.com/user-attachments/assets/700bd3bc-b9f6-4cc5-86e8-7f0ba7683d67)
 ![Screenshot 2024-09-20 103708](https://github.com/user-attachments/assets/5b48bb1b-2fa8-46e7-8618-b7cd43890c56)
 ![Screenshot 2024-09-20 104217](https://github.com/user-attachments/assets/cc1a8e4f-2311-41db-b947-74cd3fed5a00)
 
