@@ -15,8 +15,9 @@ Cases
 5. Stop the program.
 ### Program:
 
-```
+
 ###do…while
+```
 def display():
     start = input("Enter a positive value for START: ")
     end = input("Enter a positive value for END: ")
@@ -34,8 +35,8 @@ def display():
 
 display()
 ```
-```
  ###while
+```
 start=input("Enter a positive value for START: ")
 end=input("Entera positive value for END: ")
 if start.isnumeric() and end.isnumeric():
@@ -48,9 +49,9 @@ if start.isnumeric() and end.isnumeric():
 else:
     print("Enter a valid positive number.")
 ```
-```
 
-###switch\
+###switch
+```
 def switch():
     switcher = {
         0: "even",
@@ -66,9 +67,9 @@ def switch():
 
 switch()
 ```
-```
 
 ###ifelse
+```
 def compare():
     a = input("Enter a value for A: ")
     b = input("Enter a value for B: ")
@@ -90,9 +91,9 @@ def compare():
 
 compare()
 ```
-```
 
 ###for
+```
 def iterate():
     string = input("Enter a string: ")
     for i in string:
