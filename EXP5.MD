@@ -1,4 +1,6 @@
 ### Ex.No: 5 Python program for Binary Search and inspect for failures.
+### DATE:
+### REGISTER NUMBER : 212221040126
 ### AIM: 
 Write a python program for Binary Search and inspect for failures.
 
