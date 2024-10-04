@@ -16,7 +16,7 @@ Cases
 ### Program:
 
 
-###do…while
+### do…while
 ```
 def display():
     start = input("Enter a positive value for START: ")
@@ -35,7 +35,7 @@ def display():
 
 display()
 ```
- ###while
+ ### while
 ```
 start=input("Enter a positive value for START: ")
 end=input("Entera positive value for END: ")
@@ -50,7 +50,7 @@ else:
     print("Enter a valid positive number.")
 ```
 
-###switch
+### switch
 ```
 def switch():
     switcher = {
@@ -68,7 +68,7 @@ def switch():
 switch()
 ```
 
-###ifelse
+### ifelse
 ```
 def compare():
     a = input("Enter a value for A: ")
@@ -92,7 +92,7 @@ def compare():
 compare()
 ```
 
-###for
+### for
 ```
 def iterate():
     string = input("Enter a string: ")
