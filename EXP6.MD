@@ -1,54 +1,53 @@
-### Ex.No: 5 Python program for Binary Search and inspect for failures.
-### DATE:
+# Ex.No: 6 To check whether the string is Palindrome and generate test cases.
+
+### DATE:                                                                            
 ### REGISTER NUMBER : 212221040126
-
 ### AIM: 
-Write a python program for Binary Search and inspect for failures.
-
+Write a Python program to check whether the string is Palindrome and generate test cases. 
 ### Algorithm:
-1. Start the program. 
-2. Get the list from the user 
-3. Get the element to be searched 
-4. Compare the mid element with the key, if same return the index 
-5. If key is greater, search it in the right side, else search it in the left side. 
-6. If not found return -1 
-7. Stop the program. 
-
+1. Start
+2. Get an input from the user by prompting 
+3. Run a loop form 0 to len/2.
+4. Check if the characters are the same both from the start and the end till len/2. 
+5. If it is, return the result that it is a palindrome.
+6. Else, return that it is not a palindrome. 
+7. Stop the program.
 ### Program:
 ```
-def binary_search(arr, x):
-    low = 0
-    high = len(arr) - 1
-    mid = 0
+def is_palindrome(s):
+    if not isinstance(s, str):
+        return f"Invalid input: {s} is not a string."
+    s = s.lower().replace(" ", "").replace(",", "").replace(".", "")
+    return f"{s} is a palindrome." if s == s[::-1] else f"{s} is not a palindrome."
 
-    while low <= high:
-        mid = (high + low) // 2
-
-        if arr[mid] < x:
-            low = mid + 1
-        elif arr[mid] > x:
-            high = mid - 1
-        else:
-            return mid
-
-    return -1
-
-arr = [2, 3, 4, 10, 40]
-x = input("Enter the element to be searched: ")
-
-try:
-    x = int(x)
-    result = binary_search(arr, x)
-
-    if result != -1:
-        print("Element is present at index", str(result))
-    else:
-        print("Element is not present in array")
-except ValueError:
-    print("Enter a valid input!")
+print(is_palindrome("madam"))            
+print(is_palindrome("racecar"))          
+print(is_palindrome("hello"))            
+print(is_palindrome("A man a plan a canal Panama")) 
+print(is_palindrome("12321"))            
+print(is_palindrome("12345"))            
+print(is_palindrome("Was it a car or a cat I saw")) 
+print(is_palindrome("No lemon, no melon"))           
+print(is_palindrome(12321))              
+print(is_palindrome(["madam"]))          
 ```
+
+
+
+
+
+
+
+
+
+
+
 ### Output:
-![STL 05](https://github.com/user-attachments/assets/18aae00e-31a3-4ef0-91c0-1c939d5771d2)
+
+![image](https://github.com/user-attachments/assets/a34883da-216a-45f0-a722-0ae81cfe18a1)
+
+
+
+
 ### Result:
-Thus, the python program of binary search is implemented and the output is verified 
-successfully. 
+Thus, a program to check palindrome has been written and test cases have been written and verified successfully.
