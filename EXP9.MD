@@ -1,7 +1,7 @@
 # Ex.No: 9  Pytest program for Sum of Digits 
 
-### DATE: 
-### REGISTER NUMBER : 212221040126
+### DATE:11-10-24 
+### REGISTER NUMBER : 212221040174
 
 ### AIM: 
 To write a python program for sum of digits and validate the code using Pytest. 
