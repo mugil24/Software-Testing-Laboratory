@@ -1,211 +1,140 @@
-# Ex.No: 8  ATM Applicationn
-### DATE: 1-10-24                                                                        
-### REGISTER NUMBER :212221040174
+# Ex.No: 8  Test cases for Banking Application
+
+### DATE:4-10-24                                                                            
+### REGISTER NUMBER : 212221040174
 ### AIM: 
-For ATM system study its system specifications and report various bugs
-### Purpose:
-```
-This document describes the software requirements and specification (SRS) for an automated 
-teller machine (ATM) network. The document is intended for the customer and the developer 
-(designers, testers, maintainers). The reader is assumed to have basic knowledge of banking 
-accounts and account services. Knowledge and understanding of Unified Modeling Language 
-(UML) diagrams is also required.
-```
-
-### Scope:
-```
-The software supports a computerized banking network called ‗Bank24„. The network 
-enables customers to complete simple bank account services via automated teller machines 
-(ATMs) that may be located off premise and that need not be owned and operated by the 
-customer’s bank. The ATM identifies a customer by a cash card and password. It collects 
-information about a simple account transaction (e.g., deposit, withdrawal, transfer, bill 
-payment), communicates the transaction information to the customer’s bank, and dispenses 
-cash to the customer. The banks provide their own software for their own computers. The 
-‗Bank24„ software requires appropriate record keeping and security provisions. The  
-Software  must handle concurrent accesses to the same account correctly. 
-```
-
-### Intended Audience:
-```
-The intended audience of this SRS consists of: 
-Software designers 
-□
- □
- □
- □
- □
- Systems engineers 
-/Software developers 
-Software testers 
-Customers 
-The actors of the system are: 
-User 
-1.
- 2.
- 3.
- ATM Machine 
-Bank
-```
+For Banking Applicationsystem study its system specifications and generate test cases.
+### The characteristics of a Banking application are as follows: 
+- Multi-tier functionality to support thousands of concurrent user sessions 
+- Large scale Integration, typically a banking application integrates with 
+numerous other applications such as Bill Pay utility and Trading accounts 
+- Complex Business workflows 
+- Real Time and Batch processing
+- High rate of Transactions per seconds
+-  Secure Transactions
+- Robust Reporting section to keep track of day-to-day transactions
+- Strong Auditing to troubleshoot customer issues
+-  Massive storage system
+- Disaster Management.
 
 
-### Product Perspective:
-```
-An automated teller machine (ATM) is a computerized telecommunications device that 
-provides the customers of a financial institution with access to financial transactions in a 
-public space without the need for a human clerk or bank teller. On most modern ATMs, the 
-customer is identified by inserting a plastic ATM card with a magnetic stripe or a plastic 
-smartcard with a chip, that contains a unique card number and some security information, 
-such as an expiration date or CVC (CVV). Security is provided by the customer entering a 
-personal identification number (PIN). 
-```
+### Requirement Gathering: 
+Requirement gathering phase involves documentation of requirements either as Functional 
+Specifications or Use Cases. Requirements are gathered as per customer needs and documented 
+by Banking Experts or Business Analyst. To write requirements on more than one subject 
+expert are involved as banking itself has multiple sub domains and one full fledge banking 
+application will be the integration of all. For Example: A banking application may have 
+separate modules for Transfers, Credit Cards, Reports, Loan Accounts, Bill Payments, Trading 
+Etc. 
+
+
+### Requirement Review: 
+
+The deliverable of Requirement Gathering is reviewed by all the stakeholders such as QA 
+Engineers, Development leads and Peer Business Analysts. They cross check that neither 
+existing business workflows nor new workflows are violated. 
+
+
+### Business Scenario Preparations: 
+In this stage QA Engineers derive Business Scenarios from the requirement documents 
+(Functions Specs or Use Cases); Business Scenarios are derived in such a way that all 
+Business Requirements are covered. Business Scenarios are high level scenarios without any 
+detailed steps, further these Business Scenarios are reviewed by Business Analyst to ensure 
+all of Business Requirements are met and its easier for BAs to review high level scenarios 
+than reviewing low level detailed Test Cases.
 
 
 
-### Product Functions:
-```
-Using an ATM, customers can access their bank accounts in order to make cash withdrawals 
-(or credit 
-card cash advances) and check their account balances. The functions of the system are: 
-1. Login 
-2. Get Balance Information 
-3. Withdraw Cash 
-```
+
+### Test Case Preparation: 
+In this stage Test Cases are derived from Business Scenarios, one Business Scenario leads to 
+several positive test cases and negative test cases. Generally tools used during this stage are 
+Microsoft Excel, Test Director or Quality Center. 
+
+### Test Case Review: 
+Reviews by peer QA Engineers
+
+### Test Case Execution: 
+Test Case Execution could be either manual or automatic involving tools like QC, QTP or 
+any other. 
+
+### Database Testing: 
+Banking Application involves complex transaction which are performed both at UI level and 
+Database level, Therefore Database testing is as important as functional testing. Database in 
+itself is an entirely separate layer hence it is carried out by database specialists and it uses techniques like 
+- Data loading
+- Database Migration
+- Testing DB Schema and Data types
+- Rules Testing
+- Testing Stored Procedures and Functions
+- Testing Triggers
+- Data Integrity
+
+### Security Testing: 
+Security Testing is usually the last stage in the testing cycle as completing functional and non functional are entry criteria to commence Security testing. Security testing is one of the major stages in the entire Application testing cycle as this stage ensures that application complies with Federal and Industry standards. Security testing cycle makes sure the application does not have any web vulnerability which may expose sensitive data to an intruder or an attacker and complies with standards like OWASP. 
 
 
-### Operative Environments:
-```
-The hardware, software and technology used should have following specifications: 
-□ Ability to read the ATM card. 
-□ Ability to count the currency notes. 
-□ Touch screen for convenience. 
-□ Keypad(in case touchpad fails) 
-□ Continuous power supply. 
-□ Ability to connect to bank’s network. 
-□ Ability to validate user. 
-```
+In this stage the major task involves in the whole application scan which is carried out using 
+tools like IBM Appscan or HP WebInspect (2 Most popular tools). 
+
+Once the Scan is complete the Scan Report is published out of which False Positives are 
+filtered out and rest of the vulnerability are reported to Development team for fixing 
+depending on the Severity. Other Manual tools for Security Testing used are: Paros Proxy, Http Watch, Burp Suite, Fortify tools Etc. Apart from the above stages there might be different stages involved like Integration Testing and Performance Testing. 
 
 
-### Design/implementation constraints: 
-```
-Login: 
+In today’s scenario majority of Banking Projects are using: Agile/Scrum, RUP and 
+Continuous Integration methodologies, and Tools packages like Microsoft’s VSTS and 
+Rational Tools. As we mentioned RUP above, RUP stands for Rational Unified Process, 
+which is an iterative software development methodology introduced by IBM which 
+comprises of four phases in which development and testing activities are carried 
+out. 
  
-Validate Bank Card 
-□ Validate for Card Expiration Date 
-□ Validate that the card's expiration date is later than today's date 
-□ If card is expired, prompt error message "Card is expired" 
+Four phases are: 
+1.  Inception
+2. Collaboration 
+3. Construction and 
+4. Transition
+   
+RUP widely involves IBM Rational tools. 
  
-Validate for Stolen or Lost Card 
-□ Validate that the card is not reported lost or stolen 
-□ If card is lost, prompt error message, "Card has been reported lost" 
-□ If card is stolen, prompt error message, "Card has been reported stolen" 
+
+
+### Test cases for opening bank account:
  
-Validate for Disabled Card 
-□ Validate that the card is not disabled 
-□ If card is disabled, prompt error message, "Card has been disabled as of 
-<expiration date>" 
- 
-Validate for Locked Account Validate 
-that the account is not locked 
-□ If account is locked, prompt error message "Account is locked" 
-Validate PIN 
-□ Validate that the password is not blank 
-□ If PIN is blank, prompt error message "Please provide PIN" 
-□ Validate that the password entered matches the password on file 
-□ If password does not match, prompt error message "Password is Incorrect" 
-``` 
-### Lock Account 
-```
-□ If number of consecutive unsuccessful logins exceeds three attempts, lock account. 
-Maintain Consecutive Unsuccessful Login Counter 
-Increment Login Counter 
-For every consecutive Login attempt, increment logic counter by 1. 
-Reset login counter to 0 after login is successful. 
-Get Balance Information 
-Withdraw Cash 
-Transfer Funds 
-```
 
+### Input parameters checking: 
+  - Name
+ - Date of Birth
+ - Photo
+ - Address Proof
+ - Identity proof
+ - Introducers (if applicable)
+ -  PAN card
+ -  Initial deposit
+ -  Whether checkbook / ATM card / Online banking facilities are needed or not
+ -  Customer signature
 
-### Assumptions and Dependencies: 
-```
-□ Hardware never fails 
-□ ATM casing is impenetrable 
-□ Limited number of transactions per day (sufficient paper for receipts) 
-□ Limited amount of money withdrawn per day (sufficient money) 
-External Interface Requirements 
-User interfaces 
-The customer user interface should be intuitive, such that 99.9% of all new ATM users are able to 
-complete their banking transactions without any assistance. 
-``` 
-### Hardware interfaces 
-```
-The hardware should have following specifications: 
-□ Ability to read the ATM card 
-□ Ability to count the currency notes 
-□ Touch screen for convenience 
-□ Keypad (in case touchpad fails) 
-□ Continuous power supply 
-□ Ability to connect to bank’s network 
-□ Ability to take input from user 
-□ Ability to validate user 
- ```
-### Software interfaces 
-```
-The software interfaces are specific to the target banking software systems. At present, two known 
-banking systems will participate in the ATM network. 
-□ State Bank 
-□ Indian Overseas Bank 
-``` 
-### Safety requirements: 
-```
-Must be safe kept in physical aspects, say in a cabin 
-□ Must be bolted to floor to prevent any kind of theft 
-□ Must have an emergency phone outside the cabin 
-□ There must be an emergency phone just outside the cabin 
-□ The cabin door must have an ATM card swipe slot 
-□ The cabin door will always be locked, which will open only when user swipes his/her 
-ATM card in the slot & is validated as genuine 
-``` 
-### Security requirements: 
-```
-□ Users accessibility is censured in all the ways 
-□ Users are advised to change their PIN on first use 
-□ Users are advised not to tell their PIN to anyone 
-□ The maximum number of attempts to enter PIN will be three
-```
+### Type of account: 
+- Savings account
+- Salary account
+- Joint account
+-  Current account
+-   Secondary account
+-   RD account
+-   Account for a company
 
-
-### Possible Bugs:
-```
-1. Successful insertion of ATM card 
-2. Unsuccessful operation due to insert card in wrong angle 
-3. Unsuccessful operation due to invalid account Ex: other bank card or time expired card 
-4. successful entry of PIN number 
-5. un successful operation due to enter wrong PIN number 3times 
-6. successful selection of language 
-7. successful selection of account type 
-8. unsuccessful operation due to invalid account type 
-9. successful selection of withdraw operation 
-10. successful selection of amount to be withdrawal 
-11. successful withdraw operation 
-12. unsuccessful withdraw operation due to wrong denominations 
-13. unsuccessful withdraw operation due to amount is greater than day limit 
-14. unsuccessful withdraw operation due to lack of money in ATM 
-15. unsuccessful withdraw operation due to amount is greater than possible balance 
-16. unsuccessful withdraw operation due to transactions is greater than day limit 
-17. unsuccessful withdraw operation due to click cancel after insert card 
-18. unsuccessful withdraw operation due to click cancel after insert card & pin number 
-19. unsuccessful withdraw operation due to click cancel after insert card, pin number & language 
-20. unsuccessful withdraw operation due to click cancel after insert card, pin number, language 
-&account type 
-21. unsuccessful withdrawal operation due to click cancel after insert card, pin number, language, 
-account type & withdrawal operation 
-22. unsuccessful withdrawal operation due to click cancel after insert card, pin number, language, 
-account type, withdrawal operation &amount to be withdraw
-```
-
-
+### Test cases: 
+- Checking mandatory input parameters
+- Checking optional input parameters
+- Check whether able to create account entity.
+- Check whether you are able to deposit an amount in the newly created account (and thus updating the balance)
+- Check whether you are able to withdraw an amount in the newly created account (after deposit) (and thus updating the balance)
+- Check whether company name and its pan number and other details are provided in case ofsalary account
+- Check whether primary account number is provided in case of secondary account
+- Check whether company details are provided in cases of company's current account
+- Check whether proofs for joint account is provided in case of joint account
+- Check whether you are able deposit an account in the name of either of a person joint acoount.
 
 
 ### Result:
-Thus, the ATM system specifications and reporting the various bugs is implemented and output was verified successfully
+Thus, the Test cases for Banking Application is implemented and output is verified successfully. 
