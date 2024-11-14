@@ -36,7 +36,9 @@ print(“Enter a valid number”)
 ```
 
 ### Output:
-![ex77](https://github.com/user-attachments/assets/39e4c781-e922-4c3c-9f6e-07609bd9d074)
+![Screenshot 2024-10-18 112244](https://github.com/user-attachments/assets/8d7b8959-10f1-4048-9b58-00b7e61193c8)
+![Screenshot 2024-10-18 112231](https://github.com/user-attachments/assets/819de861-a22f-49a8-bf0a-f48c011b329a)
+
 
 ### Result:
 Thus, a program to check palindrome has been written and test cases have been written and verified successfully
